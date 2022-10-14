@@ -25,6 +25,9 @@
 	display: flex;
 	margin: 6.5rem auto;
 	height: 60vh;
+	@media screen and (max-width: 600px) {
+		width: 95%;
+	}
 }
 
 .socialIcons {
@@ -40,6 +43,7 @@
 
 .footerLinks p {
 	margin: 0.8rem 0rem;
+	font-size: large;
 	font-weight: 200;
 }
 

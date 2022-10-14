@@ -12,7 +12,7 @@ export default function Howtocard({
 }) {
 	return (
 		<div
-			className="bg-[#] w-[45%] h-full rounded-[12px]  m-4"
+			className="bg-[#] md:w-[45%] w-[98%] h-full rounded-[12px]  m-4"
 			style={{
 				color: `${textColor}`,
 				backgroundColor: `${backgroundColor}`,
@@ -38,7 +38,7 @@ export default function Howtocard({
 						{num}
 					</p>
 				</div>
-					<div className="text-[#09121F] p-6 text-3xl">
+				<div className="text-[#09121F] p-6 text-3xl">
 					<RiArrowRightUpLine />
 				</div>
 			</div>

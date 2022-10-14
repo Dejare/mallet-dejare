@@ -53,7 +53,7 @@ function App() {
 						<h3 className="heading-font gradient">
 							Mall<span>eth</span>
 						</h3>
-						<nav>
+						<nav className="hidden md:flex">
 							<ul className="flex flex-row">
 								<li className="mx-4 body-font">
 									<a href="#">
@@ -87,8 +87,8 @@ function App() {
 							Join Now{" "}
 						</button>
 					</header>
-					<div className=" text-white my-16 md:w-3/4 m-auto">
-						<h1 className="text-7xl text-center px-6 ">
+					<div className=" text-white my-16 px-6 md:px-0 md:w-3/4 m-auto">
+						<h1 className="md:text-7xl text-4xl text-center px-6 ">
 							Unlock the power of{" "}
 							<span className="gradient">
 								{" "}
@@ -96,7 +96,7 @@ function App() {
 								community
 							</span>
 						</h1>
-						<p className="text-xl text-center">
+						<p className="md:text-xl text-center">
 							Some people express and
 							feel love through
 							gift-giving. NFT is one
@@ -117,7 +117,7 @@ function App() {
 
 						{/* cards */}
 					</div>
-					<div className="flex flex-row mt-24 ml-8">
+					<div className="md:flex hidden flex-row mt-24 ml-8">
 						<HeroCards
 							backgroundColor="#FDD2FA"
 							image={heroOne}
@@ -131,8 +131,8 @@ function App() {
 				</div>
 			</div>
 
-			<div className="flex flex-row w-4/4 m-auto text-white mt-24 h-screen items-center justify-around bg-[#151515]">
-				<div>
+			<div className="flex md:flex-row flex-col w-4/4 m-auto text-white py-24 min-h-screen items-center justify-around bg-[#151515]">
+				<div className="order-2 md:order-1">
 					<p className="text-5xl">
 						Sneaker Heads
 					</p>
@@ -198,7 +198,7 @@ function App() {
 						</button>
 					</div>
 				</div>
-				<div>
+				<div className="order-1 md:order-2 mb-6 ">
 					<img src={rect38} alt="" />
 				</div>
 			</div>
@@ -206,7 +206,7 @@ function App() {
 				id="trending"
 				className="p-8 text-white min-h-screen"
 			>
-				<div className="title flex flex-row justify-between">
+				<div className="title flex md:flex-row flex-col justify-between">
 					<h1 className="text-4xl">
 						Trending Auctions
 					</h1>
@@ -220,8 +220,8 @@ function App() {
 					</div>
 				</div>
 				<div className="flex flex-col h-full items-center justify-center">
-					<div className="flex flex-row mt-20 m-auto items-center justify-center">
-						<button className="w-10 h-10 border border-white flex items-center justify-center rounded-full">
+					<div className="flex flex-row gap-4 justify-start items-center snap-x snap-mandatory w-full overflow-x-auto scrollbar-hide">
+						<button className="w-10 h-10 border border-white md:flex hidden items-center justify-center rounded-full">
 							<FaLessThan />
 						</button>
 						<AuctionCard
@@ -252,11 +252,11 @@ function App() {
 							highestBid="1.05"
 							img={aImageFour}
 						/>
-						<button className="w-10 h-10 border border-white flex items-center justify-center rounded-full">
+						<button className="w-10 h-10 border border-white md:flex hidden items-center justify-center rounded-full">
 							<FaGreaterThan />
 						</button>
 					</div>
-					<div className="logos flex flex-row items-center justify-center mt-16">
+					<div className="logos flex flex-row flex-wrap items-center justify-center mt-16">
 						<img
 							src={webflow}
 							alt="webflow logo"
@@ -294,7 +294,7 @@ function App() {
 							Catergories
 						</h2>
 					</div>
-					<div className="flex flex-row items-center mt-10 justify-center my-12">
+					<div className="flex flex-row gap-4 justify-start items-center snap-x snap-mandatory w-full overflow-x-auto scrollbar-hide my-12">
 						<Categories
 							text="Art"
 							image={artImage}
@@ -316,7 +316,7 @@ function App() {
 				{/* Hwo to become a creator */}
 				<div>
 					<div>
-						<h2 className="text-center text-4xl mt-12	">
+						<h2 className="text-center text-4xl mt-12 p-6 md:p-0">
 							How to become a creator
 						</h2>
 					</div>
@@ -364,13 +364,13 @@ function App() {
 			</section>
 			<section>
 				{/* newsletter */}
-				<div className="newsletter flex flex-row items-center justify-between px-8">
-					<div className="">
-						<p className="text-4xl font-bold">
+				<div className="newsletter flex md:flex-row flex-col items-center justify-between px-8">
+					<div className="py-4 md:py-0">
+						<p className="text-4xl font-bold ">
 							Stay updated With Our{" "}
 							<br /> Newsletters
 						</p>
-						<div className="mt-4">
+						<div className="mt-4 flex flex-row">
 							<input
 								type="text"
 								placeholder="Enter your email address"
@@ -392,8 +392,8 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className="footer bg-[#1B1B1B] w-full h-full text-[#fafafa] flex flex-row  p-8">
-					<div className="w-[20%]">
+				<div className="footer bg-[#1B1B1B] w-full h-full text-[#fafafa] flex md:flex-row flex-col  p-8">
+					<div className="md:w-[20%] order-last md:order-1">
 						<h3 className="heading-font gradient">
 							Mall<span>eth</span>
 						</h3>
@@ -423,8 +423,8 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-row items-start justify-evenly w-[80%] footerLinks">
-						<div className="">
+					<div className="flex md:flex-row flex-col items-start justify-evenly md:w-[80%] footerLinks md:order-2">
+						<div className="my-4 md:my-0">
 							<p className="font-bold footerLinkHead">
 								Marketplace
 							</p>
@@ -433,7 +433,7 @@ function App() {
 							<p>COllectibles</p>
 							<p>Virtual World</p>
 						</div>
-						<div>
+						<div className="my-4 md:my-0">
 							<p className="font-bold footerLinkHead">
 								Marketplace
 							</p>
@@ -442,7 +442,7 @@ function App() {
 							<p>COllectibles</p>
 							<p>Virtual World</p>
 						</div>
-						<div>
+						<div className="my-4 md:my-0">
 							<p className="font-bold footerLinkHead">
 								Marketplace
 							</p>
@@ -451,7 +451,7 @@ function App() {
 							<p>COllectibles</p>
 							<p>Virtual World</p>
 						</div>
-						<div>
+						<div className="my-4 md:my-0">
 							<p className="font-bold footerLinkHead">
 								Marketplace
 							</p>
