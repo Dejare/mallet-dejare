@@ -213,7 +213,7 @@ function App() {
 					<div>
 						<a
 							href=""
-							className="underline gradient heading-font text-2xl"
+							className="underline gradient heading-font md:text-2xl"
 						>
 							See all
 						</a>
@@ -367,19 +367,19 @@ function App() {
 			</section>
 			<section>
 				{/* newsletter */}
-				<div className="newsletter flex md:flex-row flex-col items-center md:justify-between justify-center px-8 relative">
+				<div className="newsletter flex md:flex-row flex-col items-center md:justify-between justify-center md:px-8 relative px-4">
 					<div className="md:py-0">
-						<p className="text-4xl font-bold px-4 ">
+						<p className="text-4xl font-bold md:px-4 px-1 ">
 							Stay updated With Our{" "}
 							<br /> Newsletters
 						</p>
-						<div className="mt-4 flex flex-row">
+						<div className="flex flex-row mt-5">
 							<input
 								type="text"
 								placeholder="Enter your email address"
-								className="bg-transparent py-4 px-4 pr-12 rounded-[20px] border border-black placeholder:text-black placeholder:body-font"
+								className="bg-transparent md:py-4 md:px-4 md:pr-12 rounded-[20px] border border-black placeholder:text-black placeholder:text-sm px-3 py-2 w-3/4"
 							/>
-							<button className="py-[17px] px-9 bg-[#18191F] text-white rounded-[20px] -ml-8">
+							<button className="md:py-[17px] md:px-9 bg-[#18191F] text-white rounded-[20px] -ml-8 px-3 py-2 w-1/4">
 								Submit
 							</button>
 						</div>
