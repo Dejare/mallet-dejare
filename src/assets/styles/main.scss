@@ -1,0 +1,59 @@
+@import "./variables.scss";
+@import "./_base.scss";
+@import "./fonts.scss";
+/* @import "./mixins.scss"; */
+
+.btn {
+	padding: 0.5rem 1.6rem;
+	background: linear-gradient(90deg, #c7d2fe 0.17%, #4ade80 100.17%);
+	border-radius: 40px;
+}
+.gradient {
+	background: linear-gradient(90deg, #ffffff 0.57%, #4ade80 160.17%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.newsletter {
+	background: linear-gradient(
+		95.56deg,
+		#c1ecda 1.54%,
+		rgba(75, 144, 201, 0.39) 152.16%
+	);
+	border-radius: 16px;
+	width: 90vw;
+	display: flex;
+	margin: 6.5rem auto;
+	height: 60vh;
+}
+
+.socialIcons {
+	width: 2rem;
+	height: 2rem;
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-right: 1.4rem;
+}
+
+.footerLinks p {
+	margin: 0.8rem 0rem;
+	font-weight: 200;
+}
+
+.footerLinkHead {
+	font-weight: 400 !important;
+}
+
+.hero {
+	background: rgb(250, 175, 175);
+	background: linear-gradient(
+		98deg,
+		rgb(36, 26, 26) 1%,
+		rgb(21, 29, 27) 100%,
+		rgb(17, 17, 13) 47%
+	);
+	// opacity: 0.4;
+}
