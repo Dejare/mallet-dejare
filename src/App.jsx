@@ -87,7 +87,7 @@ function App() {
 							Join Now{" "}
 						</button>
 					</header>
-					<div className=" text-white my-16 px-6 md:px-0 md:w-3/4 m-auto">
+					<div className=" text-white my-16 px-3 md:px-0 md:w-3/4 m-auto">
 						<h1 className="md:text-7xl text-4xl text-center px-6 ">
 							Unlock the power of{" "}
 							<span className="gradient">
@@ -104,8 +104,8 @@ function App() {
 							that they are thinking{" "}
 							<br /> about you.
 						</p>
-						<div className="flex flex-row m-auto items-center justify-center my-5">
-							<button className="btn mr-8 flex flex-row items-center">
+						<div className="flex md:flex-row flex-col m-auto items-center justify-center my-5">
+							<button className="btn md:mr-8 mt-3 md:mt-0 order-2 flex flex-row items-center">
 								Join Now{" "}
 								<RiArrowRightUpLine className="ml-4" />
 							</button>
@@ -220,8 +220,11 @@ function App() {
 					</div>
 				</div>
 				<div className="flex flex-col h-full items-center justify-center">
-					<div className="flex flex-row gap-4 justify-start items-center snap-x snap-mandatory w-full overflow-x-auto scrollbar-hide">
-						<button className="w-10 h-10 border border-white md:flex hidden items-center justify-center rounded-full">
+					<div
+						className="flex flex-row gap-4 md:gap-0 md:justify-center
+					 justify-start items-center snap-x snap-mandatory w-full md:w-[98%] overflow-x-auto scrollbar-hide mt-16"
+					>
+						<button className="w-10 h-10 border border-white md: hidden items-center justify-center rounded-full">
 							<FaLessThan />
 						</button>
 						<AuctionCard
@@ -252,7 +255,7 @@ function App() {
 							highestBid="1.05"
 							img={aImageFour}
 						/>
-						<button className="w-10 h-10 border border-white md:flex hidden items-center justify-center rounded-full">
+						<button className="w-10 h-10 border border-white m hidden items-center justify-center rounded-full">
 							<FaGreaterThan />
 						</button>
 					</div>
@@ -294,7 +297,7 @@ function App() {
 							Catergories
 						</h2>
 					</div>
-					<div className="flex flex-row gap-4 justify-start items-center snap-x snap-mandatory w-full overflow-x-auto scrollbar-hide my-12">
+					<div className="flex flex-row gap-4 justify-start items-center snap-x snap-mandatory w-full  overflow-x-auto scrollbar-hide my-12">
 						<Categories
 							text="Art"
 							image={artImage}
@@ -364,9 +367,9 @@ function App() {
 			</section>
 			<section>
 				{/* newsletter */}
-				<div className="newsletter flex md:flex-row flex-col items-center justify-between px-8">
-					<div className="py-4 md:py-0">
-						<p className="text-4xl font-bold ">
+				<div className="newsletter flex md:flex-row flex-col items-center md:justify-between justify-center px-8 relative">
+					<div className="md:py-0">
+						<p className="text-4xl font-bold px-4 ">
 							Stay updated With Our{" "}
 							<br /> Newsletters
 						</p>
@@ -381,7 +384,7 @@ function App() {
 							</button>
 						</div>
 					</div>
-					<div className="">
+					<div className="p-8 md:p-0 md:flex hidden">
 						<div>
 							<img
 								src={musicImage}
@@ -433,7 +436,7 @@ function App() {
 							<p>COllectibles</p>
 							<p>Virtual World</p>
 						</div>
-						<div className="my-4 md:my-0">
+						<div className="my-4 md:my-0 md:block hidden">
 							<p className="font-bold footerLinkHead">
 								Marketplace
 							</p>
@@ -442,7 +445,7 @@ function App() {
 							<p>COllectibles</p>
 							<p>Virtual World</p>
 						</div>
-						<div className="my-4 md:my-0">
+						<div className="my-4 md:my-0 md:block hidden">
 							<p className="font-bold footerLinkHead">
 								Marketplace
 							</p>
