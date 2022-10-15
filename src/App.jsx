@@ -120,22 +120,28 @@ function App() {
 							gift-giving. NFT is one
 							way people demonstrate
 							that they are thinking{" "}
-							<br /> about you.
+							about you.
 						</p>
-						<div className="flex md:flex-row flex-col m-auto items-center justify-center my-5">
-							<button className="btn md:mr-8 mt-3 md:mt-0 md:order-first order-2 flex flex-row items-center">
+						<div
+							className="flex md:flex-row flex-col m-auto items-center justify-center my-5"
+							id="homeBtn"
+						>
+							<button className="btn md:mr-5 mt-3 md:mt-0 md:order-first order-2 flex flex-row items-center">
 								Join Now{" "}
-								<RiArrowRightUpLine className="ml-4" />
+								<RiArrowRightUpLine className="ml-2" />
 							</button>
 							<button className="btn_two flex flex-row items-center">
 								Explore{" "}
-								<RiArrowRightUpLine className="ml-4" />
+								<RiArrowRightUpLine className="ml-2" />
 							</button>
 						</div>
 
 						{/* cards */}
 					</div>
-					<div className="md:flex hidden flex-row mt-24 ml-8">
+					<div
+						className="md:flex hidden flex-row mt-24 ml-8 "
+						id="homeImage"
+					>
 						<HeroCards
 							backgroundColor="#FDD2FA"
 							image={heroOne}
@@ -216,7 +222,10 @@ function App() {
 						</button>
 					</div>
 				</div>
-				<div className="order-1 md:order-2 mb-6 ">
+				<div
+					className="order-1 md:order-2 mb-6 "
+					id="sneakersHead"
+				>
 					<img src={rect38} alt="" />
 				</div>
 			</div>
