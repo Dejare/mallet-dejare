@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./assets/styles/main.css";
 import HeroCards from "./components/HeroCards";
 import sneak from "./assets/images/sneakerhead.svg";
@@ -42,14 +43,23 @@ import virtualImage from "./assets/images/categories3.svg";
 import abstractImage from "./assets/images/categories4.svg";
 import musicImage from "./assets/images/categories2.svg";
 import Howtocard from "./components/Howtocard";
+import { Pageanimations } from "./Pageanimations";
+
+// animation
 
 function App() {
+	useEffect(() => {
+		Pageanimations();
+	}, []);
 	return (
 		<div className="App">
 			<div className=" bg-black min-h-screen hero">
 				{/* header */}
 				<div className="z-[10000]">
-					<header className="p-8 text-white flex flex-row items-center justify-between">
+					<header
+						className="p-8 text-white flex flex-row items-center justify-between"
+						id="header"
+					>
 						<h3 className="heading-font gradient">
 							Mall<span>eth</span>
 						</h3>
@@ -88,15 +98,23 @@ function App() {
 						</button>
 					</header>
 					<div className=" text-white my-16 px-3 md:px-0 md:w-3/4 m-auto">
-						<h1 className="md:text-7xl text-4xl text-center px-6 ">
+						<h1
+							className="md:text-7xl text-4xl text-center px-6"
+							id="homeText"
+						>
 							Unlock the power of{" "}
-							<span className="gradient">
-								{" "}
+							<span
+								className=""
+								id="homeTextTwo"
+							>
 								your brand’s
 								community
 							</span>
 						</h1>
-						<p className="md:text-xl text-center">
+						<p
+							className="md:text-xl text-center"
+							id="homeParagraph"
+						>
 							Some people express and
 							feel love through
 							gift-giving. NFT is one
@@ -105,7 +123,7 @@ function App() {
 							<br /> about you.
 						</p>
 						<div className="flex md:flex-row flex-col m-auto items-center justify-center my-5">
-							<button className="btn md:mr-8 mt-3 md:mt-0 order-2 flex flex-row items-center">
+							<button className="btn md:mr-8 mt-3 md:mt-0 md:order-first order-2 flex flex-row items-center">
 								Join Now{" "}
 								<RiArrowRightUpLine className="ml-4" />
 							</button>
@@ -379,7 +397,7 @@ function App() {
 								placeholder="Enter your email address"
 								className="bg-transparent md:py-4 md:px-4 md:pr-12 rounded-[20px] border border-black placeholder:text-black placeholder:text-sm px-3 py-2 w-3/4"
 							/>
-							<button className="md:py-[17px] md:px-9 bg-[#18191F] text-white rounded-[20px] -ml-8 px-3 py-2 w-1/4">
+							<button className="md:py-[17px] md:px-9 bg-[#18191F] text-white rounded-[20px] -ml-8 px-3 py-2 w-1/4 md:w-2/4">
 								Submit
 							</button>
 						</div>
